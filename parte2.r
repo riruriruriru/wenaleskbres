@@ -3,9 +3,9 @@ library(tidyverse)
 library(ggplot2)
 library(ez)
 
-datos1 = read_excel("/home/nicolas/Escritorio/Inferencia/wenaleskbres/Tarea2.datos1.xls")
-datos2 = read_excel("/home/nicolas/Escritorio/Inferencia/wenaleskbres/Tarea2-datos2.xls")
-etiquetas <-c("AGv1", "AGv2", "AGv3", "AGv4")
+datos1 = read_excel("/home/nicolas/Escritorio/Inferencia/wenaleskbres/Tarea2.datos3.xls")
+datos2 = read_excel("/home/nicolas/Escritorio/Inferencia/wenaleskbres/Tarea2.datos4.xls")
+etiquetas <-c("PDFC", "NNEP", "IS.CHC.1NN","FH.GBML", "GASSIST.ADI","DT.GA")
 idvar <- "col"
 timevar <- "Intento"
 vname <- "prob"
