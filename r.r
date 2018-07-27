@@ -17,13 +17,33 @@ datos.long <- reshape(
   v.names = vname,
   direction = "long"
 )
-
+datos.long2 <- reshape(
+  data = datos2,
+  idvar = idvar,
+  timevar = timevar,
+  varying = varying,
+  v.names = vname,
+  direction = "long"
+)
 ez.aov <- ezANOVA(
   data = datos.long, 
   dv = iwi,
   wid = uwu,
   between = Intento,
-  type = 3,
-  return_aov = TRUE
+  type = 2,
+  return_aov = TRUE,
+  detailed = TRUE
+)
+ez.aov2 <- ezANOVA(
+  data = datos.long2, 
+  dv = iwi,
+  wid = uwu,
+  between = Intento,
+  type = 2,
+  return_aov = TRUE,
+  detailed = TRUE
 )
 print(ez.aov)
+print("ADSAFASFSASAD")
+print("------------------")
+print(ez.aov2)
